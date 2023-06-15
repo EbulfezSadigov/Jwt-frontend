@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
 import './App.css'
 import Signup from './components/register'
 import Login from './components/login/Login'
@@ -6,7 +6,6 @@ import Home from './components/Home'
 
 function App() {
   const token = localStorage.getItem('token')
-
   return (
     <>
       <Routes>

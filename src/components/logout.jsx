@@ -1,10 +1,12 @@
 import React from 'react'
 
 const Logout = () => {
-
+  const logout = ()=>{
+    localStorage.removeItem('token')
+  }
   return (
     <div>
-        <button onClick={handleLogout}>Logout</button>
+        <button onClick={logout}>Logout</button>
     </div>
   )
 }
